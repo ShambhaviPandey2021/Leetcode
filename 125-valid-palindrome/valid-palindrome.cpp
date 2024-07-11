@@ -3,15 +3,14 @@
 
 class Solution {
 public:
-    bool isPalindrome(std::string s) {
+    bool isPalindrome(string s) {
    
-        std::string filtered;
+        string filtered;
         for (char c : s) {
             if (std::isalnum(c)) {
                 filtered += std::tolower(c);
             }
         }
-
         int start = 0;
         int end = filtered.length() - 1;
         
