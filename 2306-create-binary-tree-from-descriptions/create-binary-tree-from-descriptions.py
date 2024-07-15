@@ -9,7 +9,6 @@ class Solution:
         nodes = {}
         child_nodes = set()
         
-        # Create all nodes and establish parent-child relationships
         for parent_val, child_val, is_left in descriptions:
             if parent_val not in nodes:
                 nodes[parent_val] = TreeNode(parent_val)
