@@ -13,7 +13,6 @@ public:
             long long requiredSum = static_cast<long long>(nums[right]) * (right - left + 1);
             long long diff = requiredSum - sum;
 
-            // If the difference is greater than k, shrink the window from the left
             while (diff > k) {
                 sum -= nums[left];
                 left++;
